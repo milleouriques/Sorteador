@@ -27,7 +27,14 @@ namespace Sorteador
                             number = random.Next(1, max + 1);
                     }
                     numeros.Add(number);
-                    Console.WriteLine(number.ToString());
+                }
+                for (int j = 0; j < numeros.Count(); j+=2)
+                {
+                if (j < numeros.Count-1)
+                {
+
+                    Console.WriteLine($"{numeros[j]} {numeros[j+1]}");
+                }
                 }
                 Console.ReadKey();
             }
